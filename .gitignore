@@ -1,1 +1,8 @@
+# Credentials file
 nexmetro_chatham_financial_api_credentials.py
+
+# Virtual environment
+venv/
+
+# Report files
+*.xlsx
