@@ -1,0 +1,1 @@
+The Generated Files folder must be in place for the API to work correctly.
