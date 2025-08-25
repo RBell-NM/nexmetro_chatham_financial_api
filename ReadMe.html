@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexmetro Chatham Financial Report Generator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        pre {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+        }
+        code {
+            background: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 13px;
+            color: #d63384;
+        }
+        .directory-tree {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            line-height: 1.4;
+            margin: 15px 0;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .warning-box {
+            background: #fff3e0;
+            border: 1px solid #ffcc02;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .success-box {
+            background: #e8f5e8;
+            border: 1px solid #c8e6c9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #495057;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.2s;
+        }
+        .toc a:hover {
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nexmetro Chatham Financial Report Generator</h1>
+        
+        <div class="highlight-box">
+            <strong>🚀 Automated Python script</strong> that generates multiple financial reports from the Chatham Financial API, including Payment Reports, Debt Reports, and Valuation Reports.
+        </div>
+
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+                <li><a href="#directory-structure">Directory Structure</a></li>
+                <li><a href="#how-to-run">How to Run</a></li>
+                <li><a href="#execution-methods">Execution Methods</a></li>
+                <li><a href="#output">Output</a></li>
+                <li><a href="#report-details">Report Details</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </div>
+
+        <h2 id="overview">📊 Overview</h2>
+        <p>This script connects to the Chatham Financial API to generate three types of reports:</p>
+        <ul>
+            <li><strong>💰 Payment Report</strong>: Transaction payment data with customizable date ranges</li>
+            <li><strong>🏦 Debt Report</strong>: Loan instrument data from portfolio analysis</li>
+            <li><strong>📈 Valuation Report</strong>: Transaction valuations including intrinsic value, time value, and pricing</li>
+        </ul>
+
+        <h2 id="prerequisites">⚙️ Prerequisites</h2>
+        
+        <h3>📦 Required Python Packages</h3>
+        <pre><code>pip install requests pandas openpyxl xml tqdm</code></pre>
+
+        <h3>📁 Required Files</h3>
+        <ul>
+            <li><code>nexmetro_chatham_financial_api_credentials.py</code> - Contains API credentials</li>
+            <li><code>utils/logger.py</code> - Logging utilities</li>
+            <li>All report modules in the <code>Reports/</code> directory</li>
+        </ul>
+
+        <h3>🔐 API Credentials File</h3>
+        <p>Create <code>nexmetro_chatham_financial_api_credentials.py</code> with:</p>
+        <pre><code>chatham_api = {
+    "api_token": "your_api_token_here",
+    "api_endpoint": "https://api.chathamdirect.com"
+}</code></pre>
+
+        <h2 id="directory-structure">📂 Directory Structure</h2>
+        <div class="directory-tree"><ul style="list-style: none; padding-left: 0; margin: 0; font-family: 'Monaco','Menlo','Ubuntu Mono',monospace;">
+    <li>
+      <span><strong>project_root/</strong></span>
+      <ul style="list-style: none; padding-left: 18px; margin: 8px 0 0 10px; border-left: 2px solid #e9ecef;">
+        <li style="margin: 6px 0;"><code>main.py</code> <span style="color:#6c757d;">— Main execution script</span></li>
+        <li style="margin: 6px 0;"><code>nexmetro_chatham_financial_api_credentials.py</code> <span style="color:#6c757d;">— API credentials</span></li>
+        <li style="margin: 10px 0 0 0;"><strong>utils/</strong>
+          <ul style="list-style: none; padding-left: 16px; margin: 6px 0 0 10px; border-left: 2px solid #e9ecef;">
+            <li style="margin: 6px 0;"><code>logger.py</code> <span style="color:#6c757d;">— Logging utilities</span></li>
+          </ul>
+        </li>
+        <li style="margin: 10px 0 0 0;"><strong>Reports/</strong>
+          <ul style="list-style: none; padding-left: 16px; margin: 6px 0 0 10px; border-left: 2px solid #e9ecef;">
+            <li style="margin: 6px 0;"><code>payment_report.py</code> <span style="color:#6c757d;">— Payment report generator</span></li>
+            <li style="margin: 6px 0;"><code>Debt_report.py</code> <span style="color:#6c757d;">— Debt report generator</span></li>
+            <li style="margin: 6px 0;"><code>valuation_report.py</code> <span style="color:#6c757d;">— Valuation report generator</span></li>
+            <li style="margin: 6px 0;"><code>queuing_report.py</code> <span style="color:#6c757d;">— Job queuing utilities</span></li>
+          </ul>
+        </li>
+        <li style="margin: 10px 0 0 0;"><strong>Generated Files/</strong> <span style="color:#6c757d;">— Output directory (auto-created)</span></li>
+        <li style="margin: 6px 0;"><strong>logs/</strong> <span style="color:#6c757d;">— Log files (auto-created)</span></li>
+      </ul>
+
+    </li>
+  </ul></div>
+
+        <h2 id="how-to-run">🚀 How to Run</h2>
+        
+        <h3>✨ Basic Execution</h3>
+        <div class="success-box">
+            <pre><code>python main.py</code></pre>
+            <p><strong>The script runs completely automated with sequential execution by default. No user input is required.</strong></p>
+        </div>
+
+        <h3>⚙️ Configuration Options</h3>
+        <p>To change execution method, edit the configuration in <code>main.py</code>:</p>
+        <pre><code># Configuration - set to "1" for sequential, "2" for parallel
+DEFAULT_EXECUTION_METHOD = "1"  # Change to "2" for parallel execution</code></pre>
+
+        <h2 id="execution-methods">🔄 Execution Methods</h2>
+        
+        <h3>🔗 Sequential Execution (Default)</h3>
+        <ul>
+            <li>Reports run one after another</li>
+            <li>Provides detailed timing for each report</li>
+            <li>More stable and predictable</li>
+            <li>Better error isolation</li>
+        </ul>
+
+        <h3>⚡ Parallel Execution</h3>
+        <ul>
+            <li>All reports run simultaneously using ThreadPoolExecutor</li>
+            <li>Faster overall execution time</li>
+            <li>Uses 2 worker threads by default</li>
+            <li>May have higher resource usage</li>
+        </ul>
+
+        <h2 id="output">📁 Output</h2>
+        
+        <h3>📄 Generated Files</h3>
+        <p>All reports are saved to the <code>Generated Files/</code> directory:</p>
+        <ul>
+            <li><code>Payment_Report.xlsx</code> - Payment transaction data</li>
+            <li><code>Debt_Report.xlsx</code> - Loan instrument data</li>
+            <li><code>Valuation_Report.xlsx</code> - Transaction valuation data</li>
+        </ul>
+
+        <h3>📝 Logging</h3>
+        <p>Detailed logs are saved to the <code>logs/</code> directory with timestamps and execution details.</p>
+
+        <h2 id="report-details">📊 Report Details</h2>
+        
+        <h3>💰 Payment Report</h3>
+        <ul>
+            <li><strong>Data Source</strong>: Chatham API payments endpoint</li>
+            <li><strong>Date Range</strong>: Previous 365 days from run date</li>
+            <li><strong>Template</strong>: Custom payment template with 18 fields</li>
+            <li><strong>Features</strong>: Automatic pagination handling, retry logic</li>
+        </ul>
+
+        <h3>🏦 Debt Report</h3>
+        <ul>
+            <li><strong>Data Source</strong>: Chatham API portfolio report</li>
+            <li><strong>Processing</strong>: XML parsing with flattened structure</li>
+            <li><strong>Retry Logic</strong>: Up to 5 attempts with 30-second delays</li>
+            <li><strong>Job Dependencies</strong>: Uses queuing_report.py for job ID generation</li>
+        </ul>
+
+        <h3>📈 Valuation Report</h3>
+        <ul>
+            <li><strong>Data Source</strong>: Chatham API transaction reports</li>
+            <li><strong>Template</strong>: Custom valuation template focusing on caps</li>
+            <li><strong>Date Range</strong>: Current date + 5 years forward</li>
+            <li><strong>Processing</strong>: Asynchronous job polling with progress bar</li>
+        </ul>
+
+        <h2 id="error-handling">🛡️ Error Handling</h2>
+        <div class="highlight-box">
+            <p>The script includes comprehensive error handling:</p>
+            <ul>
+                <li>API connection failures</li>
+                <li>Authentication errors</li>
+                <li>Data parsing issues</li>
+                <li>File I/O problems</li>
+                <li>Network timeouts</li>
+            </ul>
+            <p>All errors are logged with full stack traces for debugging.</p>
+        </div>
+
+        <h2>✨ Script Features</h2>
+        
+        <h3>🤖 Automated Execution</h3>
+        <ul>
+            <li>No user interaction required</li>
+            <li>Configurable execution method</li>
+            <li>Comprehensive logging</li>
+        </ul>
+
+        <h3>🛡️ Robust Error Handling</h3>
+        <ul>
+            <li>Individual report failure doesn't stop others</li>
+            <li>Detailed error messages and logging</li>
+            <li>Graceful handling of API timeouts</li>
+        </ul>
+
+        <h3>📊 Performance Monitoring</h3>
+        <ul>
+            <li>Execution time tracking per report</li>
+            <li>Total execution time reporting</li>
+            <li>Record count and file size reporting</li>
+        </ul>
+
+        <h3>📋 Output Summary</h3>
+        <p>The script provides a detailed summary including:</p>
+        <ul>
+            <li>Success/failure count for each report</li>
+            <li>Total records processed</li>
+            <li>File locations and sizes</li>
+            <li>Total execution time</li>
+        </ul>
+
+        <h2 id="troubleshooting">🔧 Troubleshooting</h2>
+        
+        <h3>⚠️ Common Issues</h3>
+        
+        <div class="warning-box">
+            <strong>🔐 API Authentication Errors</strong>
+            <ul>
+                <li>Verify <code>nexmetro_chatham_financial_api_credentials.py</code> exists</li>
+                <li>Check API token validity</li>
+                <li>Ensure proper file permissions</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <strong>📦 Missing Dependencies</strong>
+            <ul>
+                <li>Install required packages: <code>pip install requests pandas openpyxl xml tqdm</code></li>
+                <li>Check Python version compatibility</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <strong>📁 File Permission Errors</strong>
+            <ul>
+                <li>Ensure write permissions for <code>Generated Files/</code> and <code>logs/</code> directories</li>
+                <li>Close Excel files before running if they exist</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <strong>🌐 Network/API Timeouts</strong>
+            <ul>
+                <li>Check internet connection</li>
+                <li>Verify Chatham API endpoint availability</li>
+                <li>Review retry logic in debt report (30-second delays)</li>
+            </ul>
+        </div>
+
+        <h3>🔍 Log Analysis</h3>
+        <p>Check log files in the <code>logs/</code> directory for detailed error information:</p>
+        <ul>
+            <li>Connection issues</li>
+            <li>API response codes</li>
+            <li>Data parsing errors</li>
+            <li>File operations</li>
+        </ul>
+
+        <h2>🎨 Customization</h2>
+        
+        <h3>➕ Adding New Reports</h3>
+        <ol>
+            <li>Create new report module in <code>Reports/</code> directory</li>
+            <li>Implement function returning standardized result dictionary</li>
+            <li>Add to report lists in <code>run_reports_sequentially()</code> and <code>run_reports_parallel()</code></li>
+        </ol>
+
+        <h3>📅 Modifying Date Ranges</h3>
+        <p>Edit date calculations in individual report modules:</p>
+        <ul>
+            <li><code>payment_report.py</code>: Line with <code>timedelta(days=365)</code></li>
+            <li><code>queuing_report.py</code>: Modify <code>todate</code> calculation</li>
+            <li><code>valuation_report.py</code>: Adjust <code>ActiveToDate</code> calculation</li>
+        </ul>
+
+        <h3>📊 Changing Output Format</h3>
+        <p>Modify the <code>to_excel()</code> calls in report modules to use different formats or add additional processing.</p>
+
+        <h2>⚡ Performance Notes</h2>
+        <div class="success-box">
+            <ul>
+                <li><strong>Sequential Mode</strong>: ~2-5 minutes total (depends on data volume)</li>
+                <li><strong>Parallel Mode</strong>: ~1-3 minutes total (network dependent)</li>
+                <li><strong>Memory Usage</strong>: Minimal, data is streamed and processed incrementally</li>
+                <li><strong>Network</strong>: Multiple API calls, requires stable internet connection</li>
+            </ul>
+        </div>
+
+        <h2>📞 Support</h2>
+        <p>For issues with:</p>
+        <ul>
+            <li><strong>Script functionality</strong>: Check logs and error messages</li>
+            <li><strong>API connectivity</strong>: Contact Chatham Financial support</li>
+            <li><strong>Data accuracy</strong>: Verify date ranges and API parameters</li>
+        </ul>
+    </div>
+</body>
+</html>

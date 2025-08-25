@@ -1,0 +1,60 @@
+2025-08-25 08:19:59 | main | INFO | <module>:164 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-25 08:19:59 | main | INFO | <module>:165 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-25 08:19:59 | main | INFO | <module>:166 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-25 08:19:59 | main | INFO | <module>:167 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-25 08:20:08 | main | INFO | <module>:170 | User selected execution method: 1
+2025-08-25 08:20:08 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-25 08:20:08 | main | INFO | run_reports_sequentially:45 | Starting Payment Report...
+2025-08-25 08:20:11 | main | INFO | run_reports_sequentially:53 | Payment Report completed in 2.80s
+2025-08-25 08:20:11 | main | INFO | run_reports_sequentially:45 | Starting Debt Report...
+2025-08-25 08:20:44 | main | INFO | run_reports_sequentially:53 | Debt Report completed in 33.06s
+2025-08-25 08:20:44 | main | INFO | run_reports_sequentially:45 | Starting Valuation Report...
+2025-08-25 08:20:47 | main | INFO | run_reports_sequentially:53 | Valuation Report completed in 2.66s
+2025-08-25 08:20:47 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 38.53s
+2025-08-25 08:20:47 | main | INFO | print_summary:123 | ==================================================
+2025-08-25 08:20:47 | main | INFO | print_summary:124 | REPORT GENERATION SUMMARY
+2025-08-25 08:20:47 | main | INFO | print_summary:125 | ==================================================
+2025-08-25 08:20:47 | main | INFO | print_summary:146 | Payment Report: 100 records (2.80s)
+2025-08-25 08:20:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,474 bytes)
+2025-08-25 08:20:47 | main | INFO | print_summary:146 | Debt Report: 34 records (33.06s)
+2025-08-25 08:20:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Debt_Report.xlsx (34,431 bytes)
+2025-08-25 08:20:47 | main | INFO | print_summary:146 | Valuation Report: 34 records (2.66s)
+2025-08-25 08:20:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Valuation_Report.xlsx (9,099 bytes)
+2025-08-25 08:20:47 | main | INFO | print_summary:153 | --------------------------------------------------
+2025-08-25 08:20:47 | main | INFO | print_summary:154 | Total: 3 successful, 0 failed
+2025-08-25 08:20:47 | main | INFO | print_summary:155 | Total records: 168
+2025-08-25 08:20:47 | main | INFO | print_summary:156 | Total time: 38.53s
+2025-08-25 08:20:47 | main | INFO | print_summary:157 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-25 08:20:47 | main | INFO | print_summary:158 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-25 08:20:47 | main | INFO | <module>:180 | All operations completed in 38.53s
+2025-08-25 08:20:47 | main | INFO | <module>:183 | All reports generated successfully!
+2025-08-25 08:27:37 | main | INFO | <module>:167 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-25 08:27:37 | main | INFO | <module>:168 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-25 08:27:37 | main | INFO | <module>:169 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-25 08:27:37 | main | INFO | <module>:170 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-25 08:27:37 | main | INFO | <module>:173 | Using execution method: 1 (Sequential)
+2025-08-25 08:27:37 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-25 08:27:37 | main | INFO | run_reports_sequentially:48 | Starting Payment Report...
+2025-08-25 08:27:40 | main | INFO | run_reports_sequentially:56 | Payment Report completed in 3.31s
+2025-08-25 08:27:40 | main | INFO | run_reports_sequentially:48 | Starting Debt Report...
+2025-08-25 08:28:13 | main | INFO | run_reports_sequentially:56 | Debt Report completed in 32.80s
+2025-08-25 08:28:13 | main | INFO | run_reports_sequentially:48 | Starting Valuation Report...
+2025-08-25 08:28:16 | main | INFO | run_reports_sequentially:56 | Valuation Report completed in 2.43s
+2025-08-25 08:28:16 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 38.55s
+2025-08-25 08:28:16 | main | INFO | print_summary:126 | ==================================================
+2025-08-25 08:28:16 | main | INFO | print_summary:127 | REPORT GENERATION SUMMARY
+2025-08-25 08:28:16 | main | INFO | print_summary:128 | ==================================================
+2025-08-25 08:28:16 | main | INFO | print_summary:149 | Payment Report: 100 records (3.31s)
+2025-08-25 08:28:16 | main | INFO | print_summary:150 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,477 bytes)
+2025-08-25 08:28:16 | main | INFO | print_summary:149 | Debt Report: 34 records (32.80s)
+2025-08-25 08:28:16 | main | INFO | print_summary:150 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Debt_Report.xlsx (34,430 bytes)
+2025-08-25 08:28:16 | main | INFO | print_summary:149 | Valuation Report: 34 records (2.43s)
+2025-08-25 08:28:16 | main | INFO | print_summary:150 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Valuation_Report.xlsx (9,099 bytes)
+2025-08-25 08:28:16 | main | INFO | print_summary:156 | --------------------------------------------------
+2025-08-25 08:28:16 | main | INFO | print_summary:157 | Total: 3 successful, 0 failed
+2025-08-25 08:28:16 | main | INFO | print_summary:158 | Total records: 168
+2025-08-25 08:28:16 | main | INFO | print_summary:159 | Total time: 38.54s
+2025-08-25 08:28:16 | main | INFO | print_summary:160 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-25 08:28:16 | main | INFO | print_summary:161 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-25 08:28:16 | main | INFO | <module>:183 | All operations completed in 38.55s
+2025-08-25 08:28:16 | main | INFO | <module>:186 | All reports generated successfully!

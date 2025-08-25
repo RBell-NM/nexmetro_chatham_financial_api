@@ -1,0 +1,118 @@
+2025-08-22 16:25:49 | main | INFO | <module>:156 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-22 16:25:49 | main | INFO | <module>:157 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-22 16:25:49 | main | INFO | <module>:158 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:25:49 | main | INFO | <module>:159 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:25:49 | main | WARNING | <module>:162 | Using placeholder report functions - implement actual reports in reports/ directory
+2025-08-22 16:27:50 | main | INFO | <module>:165 | User selected execution method: & "C:/_API Repo/nexmetro_chatham_financial_api/.venv/Scripts/python.exe" "c:/_API Repo/nexmetro_chatham_financial_api/main.py"
+2025-08-22 16:27:50 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-22 16:27:50 | main | INFO | run_reports_sequentially:52 | Starting Payment Report...
+2025-08-22 16:27:50 | main | INFO | run_reports_sequentially:60 | Payment Report completed in 0.00s
+2025-08-22 16:27:50 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 0.00s
+2025-08-22 16:27:50 | main | INFO | print_summary:120 | ==================================================
+2025-08-22 16:27:50 | main | INFO | print_summary:121 | REPORT GENERATION SUMMARY
+2025-08-22 16:27:50 | main | INFO | print_summary:122 | ==================================================
+2025-08-22 16:27:50 | main | INFO | print_summary:140 | Payment Report: 0 records (0.00s)
+2025-08-22 16:27:50 | main | INFO | print_summary:145 | --------------------------------------------------
+2025-08-22 16:27:50 | main | INFO | print_summary:146 | Total: 1 successful, 0 failed
+2025-08-22 16:27:50 | main | INFO | print_summary:147 | Total records: 0
+2025-08-22 16:27:50 | main | INFO | print_summary:148 | Total time: 0.00s
+2025-08-22 16:27:50 | main | INFO | print_summary:149 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:27:50 | main | INFO | print_summary:150 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:27:50 | main | INFO | <module>:175 | All operations completed in 0.00s
+2025-08-22 16:27:50 | main | INFO | <module>:178 | All reports generated successfully!
+2025-08-22 16:40:38 | main | INFO | <module>:146 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-22 16:40:38 | main | INFO | <module>:147 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-22 16:40:38 | main | INFO | <module>:148 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:40:38 | main | INFO | <module>:149 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:41:47 | main | INFO | <module>:152 | User selected execution method: 1
+2025-08-22 16:41:47 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-22 16:41:47 | main | INFO | run_reports_sequentially:36 | Starting Payment Report...
+2025-08-22 16:41:49 | main | INFO | run_reports_sequentially:44 | Payment Report completed in 2.63s
+2025-08-22 16:41:49 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 2.63s
+2025-08-22 16:41:49 | main | INFO | print_summary:105 | ==================================================
+2025-08-22 16:41:49 | main | INFO | print_summary:106 | REPORT GENERATION SUMMARY
+2025-08-22 16:41:49 | main | INFO | print_summary:107 | ==================================================
+2025-08-22 16:41:49 | main | INFO | print_summary:128 | Payment Report: 100 records (2.63s)
+2025-08-22 16:41:49 | main | INFO | print_summary:129 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,475 bytes)
+2025-08-22 16:41:49 | main | INFO | print_summary:135 | --------------------------------------------------
+2025-08-22 16:41:49 | main | INFO | print_summary:136 | Total: 1 successful, 0 failed
+2025-08-22 16:41:49 | main | INFO | print_summary:137 | Total records: 100
+2025-08-22 16:41:49 | main | INFO | print_summary:138 | Total time: 2.63s
+2025-08-22 16:41:49 | main | INFO | print_summary:139 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:41:49 | main | INFO | print_summary:140 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:41:49 | main | INFO | <module>:162 | All operations completed in 2.63s
+2025-08-22 16:41:49 | main | INFO | <module>:165 | All reports generated successfully!
+2025-08-22 16:47:52 | main | INFO | <module>:146 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-22 16:47:52 | main | INFO | <module>:147 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-22 16:47:52 | main | INFO | <module>:148 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:47:52 | main | INFO | <module>:149 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:48:00 | main | INFO | <module>:152 | User selected execution method: 1
+2025-08-22 16:48:00 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-22 16:48:00 | main | INFO | run_reports_sequentially:36 | Starting Payment Report...
+2025-08-22 16:48:03 | main | INFO | run_reports_sequentially:44 | Payment Report completed in 2.67s
+2025-08-22 16:48:03 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 2.67s
+2025-08-22 16:48:03 | main | INFO | print_summary:105 | ==================================================
+2025-08-22 16:48:03 | main | INFO | print_summary:106 | REPORT GENERATION SUMMARY
+2025-08-22 16:48:03 | main | INFO | print_summary:107 | ==================================================
+2025-08-22 16:48:03 | main | INFO | print_summary:128 | Payment Report: 100 records (2.67s)
+2025-08-22 16:48:03 | main | INFO | print_summary:129 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,477 bytes)
+2025-08-22 16:48:03 | main | INFO | print_summary:135 | --------------------------------------------------
+2025-08-22 16:48:03 | main | INFO | print_summary:136 | Total: 1 successful, 0 failed
+2025-08-22 16:48:03 | main | INFO | print_summary:137 | Total records: 100
+2025-08-22 16:48:03 | main | INFO | print_summary:138 | Total time: 2.67s
+2025-08-22 16:48:03 | main | INFO | print_summary:139 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:48:03 | main | INFO | print_summary:140 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:48:03 | main | INFO | <module>:162 | All operations completed in 2.67s
+2025-08-22 16:48:03 | main | INFO | <module>:165 | All reports generated successfully!
+2025-08-22 16:49:29 | main | INFO | <module>:146 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-22 16:49:29 | main | INFO | <module>:147 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-22 16:49:29 | main | INFO | <module>:148 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:49:29 | main | INFO | <module>:149 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:50:07 | main | INFO | <module>:152 | User selected execution method: 1
+2025-08-22 16:50:07 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-22 16:50:07 | main | INFO | run_reports_sequentially:36 | Starting Payment Report...
+2025-08-22 16:50:10 | main | INFO | run_reports_sequentially:44 | Payment Report completed in 2.43s
+2025-08-22 16:50:10 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 2.43s
+2025-08-22 16:50:10 | main | INFO | print_summary:105 | ==================================================
+2025-08-22 16:50:10 | main | INFO | print_summary:106 | REPORT GENERATION SUMMARY
+2025-08-22 16:50:10 | main | INFO | print_summary:107 | ==================================================
+2025-08-22 16:50:10 | main | INFO | print_summary:128 | Payment Report: 100 records (2.43s)
+2025-08-22 16:50:10 | main | INFO | print_summary:129 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,477 bytes)
+2025-08-22 16:50:10 | main | INFO | print_summary:135 | --------------------------------------------------
+2025-08-22 16:50:10 | main | INFO | print_summary:136 | Total: 1 successful, 0 failed
+2025-08-22 16:50:10 | main | INFO | print_summary:137 | Total records: 100
+2025-08-22 16:50:10 | main | INFO | print_summary:138 | Total time: 2.43s
+2025-08-22 16:50:10 | main | INFO | print_summary:139 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:50:10 | main | INFO | print_summary:140 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:50:10 | main | INFO | <module>:162 | All operations completed in 2.43s
+2025-08-22 16:50:10 | main | INFO | <module>:165 | All reports generated successfully!
+2025-08-22 16:51:04 | main | INFO | <module>:164 | Nexmetro Chatham Financial Report Generator Starting
+2025-08-22 16:51:04 | main | INFO | <module>:165 | Working directory: C:\_API Repo\nexmetro_chatham_financial_api
+2025-08-22 16:51:04 | main | INFO | <module>:166 | Output directory: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:51:04 | main | INFO | <module>:167 | Log directory: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:51:09 | main | INFO | <module>:170 | User selected execution method: 1
+2025-08-22 16:51:09 | main | INFO | __enter__:108 | Starting run_reports_sequentially
+2025-08-22 16:51:09 | main | INFO | run_reports_sequentially:45 | Starting Payment Report...
+2025-08-22 16:51:11 | main | INFO | run_reports_sequentially:53 | Payment Report completed in 2.29s
+2025-08-22 16:51:11 | main | INFO | run_reports_sequentially:45 | Starting Debt Report...
+2025-08-22 16:51:45 | main | INFO | run_reports_sequentially:53 | Debt Report completed in 33.81s
+2025-08-22 16:51:45 | main | INFO | run_reports_sequentially:45 | Starting Valuation Report...
+2025-08-22 16:51:47 | main | INFO | run_reports_sequentially:53 | Valuation Report completed in 2.62s
+2025-08-22 16:51:47 | main | INFO | __exit__:117 | Completed run_reports_sequentially in 38.72s
+2025-08-22 16:51:47 | main | INFO | print_summary:123 | ==================================================
+2025-08-22 16:51:47 | main | INFO | print_summary:124 | REPORT GENERATION SUMMARY
+2025-08-22 16:51:47 | main | INFO | print_summary:125 | ==================================================
+2025-08-22 16:51:47 | main | INFO | print_summary:146 | Payment Report: 100 records (2.29s)
+2025-08-22 16:51:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Payment_Report.xlsx (13,473 bytes)
+2025-08-22 16:51:47 | main | INFO | print_summary:146 | Debt Report: 34 records (33.81s)
+2025-08-22 16:51:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Debt_Report.xlsx (34,497 bytes)
+2025-08-22 16:51:47 | main | INFO | print_summary:146 | Valuation Report: 34 records (2.62s)
+2025-08-22 16:51:47 | main | INFO | print_summary:147 |   File: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files\Valuation_Report.xlsx (9,094 bytes)
+2025-08-22 16:51:47 | main | INFO | print_summary:153 | --------------------------------------------------
+2025-08-22 16:51:47 | main | INFO | print_summary:154 | Total: 3 successful, 0 failed
+2025-08-22 16:51:47 | main | INFO | print_summary:155 | Total records: 168
+2025-08-22 16:51:47 | main | INFO | print_summary:156 | Total time: 38.72s
+2025-08-22 16:51:47 | main | INFO | print_summary:157 | Output folder: C:\_API Repo\nexmetro_chatham_financial_api\Generated Files
+2025-08-22 16:51:47 | main | INFO | print_summary:158 | Log folder: C:\_API Repo\nexmetro_chatham_financial_api\logs
+2025-08-22 16:51:47 | main | INFO | <module>:180 | All operations completed in 38.72s
+2025-08-22 16:51:47 | main | INFO | <module>:183 | All reports generated successfully!
